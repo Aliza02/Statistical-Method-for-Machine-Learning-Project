@@ -1,0 +1,38 @@
+\begin{table}[ht]\centering\small
+\caption{Results on \texttt{Norm-25} over 50 paired trials per method. Ratio = final inertia divided by the best inertia found by any run; \emph{hit} = runs within 0.1\% of the best; pair ARI = mean agreement between partitions of two runs.}
+\label{tab:Norm25}
+\resizebox{\textwidth}{!}{\begin{tabular}{llrrrrrrrrrr}\toprule
+$k$ & method & seed inertia & final mean & final std & CV\% & ratio mean & ratio max & hit\% & iters & pair ARI & ARI truth\\\midrule
+10 & random & $1.327\mathrm{e}9$ & $7.398\mathrm{e}8$ & $5.913\mathrm{e}7$ & 7.99 & 1.224 & 1.436 & 0 & 6.7 & 0.355 & --\\
+10 & k-means++ & $1.122\mathrm{e}9$ & $6.790\mathrm{e}8$ & $3.688\mathrm{e}7$ & 5.43 & 1.123 & 1.263 & 2 & 1.5 & 0.421 & --\\
+\midrule
+25 & random & $5.871\mathrm{e}8$ & $2.375\mathrm{e}8$ & $6.096\mathrm{e}7$ & 25.66 & 3{,}181.805 & 5{,}079.173 & 0 & 15.6 & 0.561 & 0.697\\
+25 & k-means++ & $1.492\mathrm{e}5$ & $7.466\mathrm{e}4$ & $0$ & 0.00 & 1.000 & 1.000 & 100 & 1.0 & 1.000 & 1.000\\
+\midrule
+50 & random & $2.038\mathrm{e}8$ & $3.912\mathrm{e}7$ & $3.768\mathrm{e}7$ & 96.33 & 557.846 & 2{,}036.614 & 0 & 20.0 & 0.586 & --\\
+50 & k-means++ & $1.273\mathrm{e}5$ & $7.033\mathrm{e}4$ & $1.224\mathrm{e}2$ & 0.17 & 1.003 & 1.007 & 12 & 18.8 & 0.640 & --\\
+\bottomrule\end{tabular}}\end{table}
+
+\begin{table}[ht]\centering\small
+\caption{Results on \texttt{Digits} over 50 paired trials per method. Ratio = final inertia divided by the best inertia found by any run; \emph{hit} = runs within 0.1\% of the best; pair ARI = mean agreement between partitions of two runs.}
+\label{tab:Digits}
+\resizebox{\textwidth}{!}{\begin{tabular}{llrrrrrrrrrr}\toprule
+$k$ & method & seed inertia & final mean & final std & CV\% & ratio mean & ratio max & hit\% & iters & pair ARI & ARI truth\\\midrule
+10 & random & $2.280\mathrm{e}6$ & $1.188\mathrm{e}6$ & $2.673\mathrm{e}4$ & 2.25 & 1.020 & 1.090 & 24 & 20.1 & 0.753 & 0.618\\
+10 & k-means++ & $2.250\mathrm{e}6$ & $1.188\mathrm{e}6$ & $2.580\mathrm{e}4$ & 2.17 & 1.019 & 1.088 & 12 & 19.0 & 0.751 & 0.610\\
+\midrule
+25 & random & $1.684\mathrm{e}6$ & $9.034\mathrm{e}5$ & $9.664\mathrm{e}3$ & 1.07 & 1.023 & 1.059 & 0 & 22.6 & 0.643 & --\\
+25 & k-means++ & $1.626\mathrm{e}6$ & $9.009\mathrm{e}5$ & $1.002\mathrm{e}4$ & 1.11 & 1.020 & 1.057 & 2 & 20.3 & 0.655 & --\\
+\midrule
+50 & random & $1.319\mathrm{e}6$ & $7.363\mathrm{e}5$ & $9.383\mathrm{e}3$ & 1.27 & 1.030 & 1.062 & 2 & 18.8 & 0.545 & --\\
+50 & k-means++ & $1.288\mathrm{e}6$ & $7.319\mathrm{e}5$ & $7.093\mathrm{e}3$ & 0.97 & 1.024 & 1.043 & 0 & 18.4 & 0.562 & --\\
+\bottomrule\end{tabular}}\end{table}
+
+\begin{table}[ht]\centering\small
+\caption{Results on \texttt{Blobs-2D} over 50 paired trials per method. Ratio = final inertia divided by the best inertia found by any run; \emph{hit} = runs within 0.1\% of the best; pair ARI = mean agreement between partitions of two runs.}
+\label{tab:Blobs2D}
+\resizebox{\textwidth}{!}{\begin{tabular}{llrrrrrrrrrr}\toprule
+$k$ & method & seed inertia & final mean & final std & CV\% & ratio mean & ratio max & hit\% & iters & pair ARI & ARI truth\\\midrule
+9 & random & $1.161\mathrm{e}4$ & $2.553\mathrm{e}3$ & $1.232\mathrm{e}3$ & 48.26 & 2.651 & 4.930 & 30 & 9.3 & 0.788 & 0.878\\
+9 & k-means++ & $3.509\mathrm{e}3$ & $1.444\mathrm{e}3$ & $8.912\mathrm{e}2$ & 61.71 & 1.500 & 4.815 & 76 & 4.7 & 0.926 & 0.962\\
+\bottomrule\end{tabular}}\end{table}
